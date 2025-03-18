@@ -1,4 +1,4 @@
-# DGE-304: Final Project
+# Headphone E-Commerce Website
 ![homepage-1](https://github.com/SUTAMPU/headphone-webpage/blob/main/previews/homepage-1.png?raw=true)
 
 ## Webpages
