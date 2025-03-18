@@ -1,5 +1,8 @@
 # DGE-304: Final Project
-## Main Webpage
+![homepage-1](https://github.com/SUTAMPU/headphone-webpage/blob/main/previews/homepage-1.png?raw=true)
+
+## Webpages
+Previews of each page can be seen in the _previews_ folder, where it consists as follows:
 - Homepage
 - Catalogue
 - Details
