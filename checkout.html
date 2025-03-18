@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | stompsound</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo-3.png" type="image/icon type">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h1>Whoohoo!</h1>
+            <h5>You have made your purchase! Thank you for shopping at stompsound. We look forward to your next visit :)</h5>
+            <h5>Your payment and order confirmation have been sent to <span class="highlight">Email</span></h5>
+        </div>
+        <div class="flex-box">
+            <div class="payment-btn" onclick="window.location='home.html'";>
+                BACK TO HOMEPAGE
+            </div>
+        </div>
+    </div>
+    
+    <!-- Import template file -->
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="checkout-container">
+            <ul class="breadcrumb">
+                <li><a href="home.html"><img src="assets/logo-2.png" alt="logo"></a></li>
+                <li>Checkout</a></li>
+            </ul>
+
+            <!-- Checkout: Title -->
+            <div class="checkout-title">
+                <h1>Checkout</h1>
+            </div>
+            <hr>
+
+            <!-- Checkout: Main -->
+            <div class="checkout-content">
+            
+                <!-- Checkout: Shipping -->
+                <div class="shipping">
+                    <h2>SHIPPING</h2>
+                    <h5>Please complete the information as needed</h5>
+                    <form id="formDetails">
+                        <div class="form-container">
+                            <div class="input-box">
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="flex-box">
+                                <div class="input-box">
+                                    <input type="text" id="firstname" name="firstname" placeholder="First name">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" id="lastname" name="lastname" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="address-1" name="address-1" placeholder="Address">
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="address-2" name="address-2" placeholder="Apartment, suite, etc. (optional)">
+                            </div>
+                            <div class="flex-box">
+                                <div class="input-box">
+                                    <input type="text" id="city" name="city" placeholder="City">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" id="province" name="province" placeholder="Province">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" id="postal" name="postal" placeholder="Postal code">
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                            </div>
+                            <div class="flex-box-2">
+                                <div class="payment-btn">
+                                    <input type="button" class="btn-1" value="Payment" onclick="submitDetails()">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Checkout: Order summary -->
+                <div class="order-summary">
+                    <h2>ORDER SUMMARY (<span class="product-count">0</span>)</h2>
+                    
+                    <div class="summary-list">
+                    
+                    </div>
+
+                </div>
+                
+            </div>   
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Suvapat Pimklang (2221610260)</p>
+    </footer>
+
+    <script>
+    // ----------- Show popup -----------
+    function submitDetails() {
+        let email = document.getElementById('email').value;
+        document.querySelector('.highlight').textContent = email;
+
+        document.querySelector(".overlay").classList.add('active');
+        document.querySelector(".popup").classList.add('active');
+    }
+    // ----------- Close popup -----------
+    function closePopup() {
+        document.querySelector(".overlay").classList.remove('active');
+        document.querySelector(".popup").classList.remove('active');
+    };
+    </script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="scripts/checkout.js"></script>
+</body>
+</html>

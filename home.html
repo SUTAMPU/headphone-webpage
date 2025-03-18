@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | stompsound</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Import template file -->
+    <div id="header-container"></div>
+
+    <!-- Main content -->
+    <div class="container-1">
+        
+        <!-- Home: Main -->
+        <div class="home-main">
+            <div class="home-text">
+                <h1 class="title">Discover your own sound</h1>
+                <h3>Find your own <span class="highlight">high-quality</span> headphones and feel the music with us!</h3>
+                <button class="home-button" onclick="document.getElementById('catalogue-list').scrollIntoView();">SHOP NOW</a>
+            </div>
+            <div class="home-image">
+                <img class="home-img" src="assets/home.png" alt="home">
+            </div>
+        </div>
+
+        <!-- Home: Product finder -->
+        <div class="product-finder-container">
+            <div class="product-finder">
+                <h1>PRODUCT FINDER</h1>
+                <hr>
+                <div class="cards" id="catalogue-list">
+                    <!-- Card 1 -->
+                    <div class="over-ear-card">        <!-- category for js -->
+                        <a class="card-link" href="catalogue.html?category=over-ear" >
+                        <div class="card-image">
+                            <img src="assets/over-ear.jpg" alt="over-ear">
+                        </div>
+                        <div class="card-text">
+                            <h5>OVER-EAR HEADPHONES</h5>
+                            <p>Unlock your full listening experience with over-ear headphones</p>
+                            <a class="btn-link" href="catalogue.html?category=over-ear" role="button">SHOP NOW</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="on-ear-card">       
+                        <a class="card-link" href="catalogue.html?category=in-ear" >
+                        <img src="assets/on-ear.jpg" alt="on-ear">
+                        <div class="card-text">
+                            <h5>ON-EAR HEADPHONES</h5>
+                            <p>Enjoy your music with a more lightweight and compact on-ear headphones</p>
+                            <a class="btn-link" href="catalogue.html?category=on-ear" role="button">SHOP NOW</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="in-ear-card">       
+                        <a class="card-link" href="catalogue.html?category=in-ear" >
+                        <img src="assets/in-ear.jpg" alt="in-ear">
+                        <div class="card-text">
+                            <h5>IN-EAR HEADPHONES</h5>
+                            <p>Go lighter and still be immersed in your music with in-ear headphones</p>
+                            <a class="btn-link" href="catalogue.html?category=in-ear" role="button">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Suvapat Pimklang (2221610260)</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
